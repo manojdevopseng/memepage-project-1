@@ -21,5 +21,4 @@ jobs:
         aws-region: us-east-1  # Change to your region
 
     - name: Sync files to S3
-      run: |
-        aws s3 sync . s3://meme-coin --delete
+      run: aws s3 sync . s3://meme-coin --delete
